@@ -70,6 +70,11 @@
                 </h2>
               </div>
             </div>
+            <div class="w-full">
+              <select name="" id="">
+                <option value="blender">Blender</option>
+              </select>
+            </div>
           </div>
           <div class="bg-gray-900 w-full">
             <h2 class="text-white font-ibmplexsans font-medium">
@@ -87,7 +92,7 @@ import TopMenu from "@/components/TopMenu.vue";
 export default {
   name: "App",
   title: "Hello",
-  components: { TopMenu },
+  components: { TopMenu }
 };
 </script>
 
@@ -101,4 +106,4 @@ export default {
 .font-ibmplexsans {
   font-family: "IBM Plex Sans", monospace;
 }
-</style> 
+</style>
