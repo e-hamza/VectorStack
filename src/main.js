@@ -1,4 +1,4 @@
 import { createApp } from "vue";
-import CreateRender from "./CreateRender.vue";
+import NodesSelection from "./NodesSelection.vue";
 
-createApp(CreateRender).mount("#app");
+createApp(NodesSelection).mount("#app");
