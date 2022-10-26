@@ -23,7 +23,7 @@
           </textarea>
         </div>
         <div
-          class="w-full rounded-md flex flex-row space-x-4 pt-4 justify-between"
+          class="w-full rounded-md flex flex-row space-x-6 pt-4 justify-between"
         >
           <div class="w-full space-y-4">
             <h2 class="text-white font-ibmplexsans font-medium">
@@ -70,17 +70,119 @@
                 </h2>
               </div>
             </div>
-            <div class="w-full">
-              <select name="" id="">
+
+            <div class="flex flex-col space-y-3">
+              <select
+                class="w-full h-12 px-3 bg-[#1b1b1b] text-white rounded-lg"
+                name=""
+                id=""
+              >
                 <option value="blender">Blender</option>
+              </select>
+              <select
+                class="w-full h-12 px-3 bg-[#1b1b1b] text-white rounded-lg"
+                name=""
+                id=""
+              >
+                <option value="blender">3.1</option>
               </select>
             </div>
           </div>
-          <div class="bg-gray-900 w-full">
+          <div class="w-full space-y-4">
             <h2 class="text-white font-ibmplexsans font-medium">
               Render Output Configuration
             </h2>
+            <div class="flex flex-row items-center space-x-4">
+              <h2 class="text-white w-1/3">Resolution</h2>
+              <select
+                class="w-full h-12 px-3 bg-[#1b1b1b] text-white rounded-lg"
+                name=""
+                id=""
+              >
+                <option value="4k">3840 x 2160</option>
+                <option value="4k">1920 x 1440</option>
+                <option value="4k">1920 x 1080</option>
+              </select>
+            </div>
+            <div class="flex flex-row items-center space-x-4">
+              <h2 class="text-white w-1/3">FPS</h2>
+              <select
+                class="w-full h-12 px-3 bg-[#1b1b1b] text-white rounded-lg"
+                name=""
+                id=""
+              >
+                <option value="4k">60</option>
+                <option value="4k">30</option>
+                <option value="4k">24</option>
+              </select>
+            </div>
+            <div class="flex flex-row items-center space-x-4">
+              <h2 class="text-white w-1/3">Codec</h2>
+              <select
+                class="w-full h-12 px-3 bg-[#1b1b1b] text-white rounded-lg"
+                name=""
+                id=""
+              >
+                <option value="4k">H264</option>
+                <option value="4k">H265</option>
+              </select>
+            </div>
+            <div class="flex flex-row items-center space-x-4">
+              <h2 class="text-white w-1/3">File Type</h2>
+              <select
+                class="w-full h-12 px-3 bg-[#1b1b1b] text-white rounded-lg"
+                name=""
+                id=""
+              >
+                <option value="4k">MP4</option>
+                <option value="4k">AVI</option>
+              </select>
+            </div>
+            <select
+              class="w-full h-12 px-3 bg-[#1b1b1b] text-white rounded-lg"
+              name=""
+              id=""
+            >
+              <option value="s3">AWS S3</option>
+            </select>
+            <input
+              class="w-full h-12 px-3 bg-[#1b1b1b] text-white rounded-lg"
+              value="/renders/personal_channel/4k/"
+            />
           </div>
+        </div>
+        <div class="w-full h-10 flex flex-row justify-between">
+          <div class="flex flex-wrap">
+            <div class="flex items-center mr-4">
+              <input
+                id="red-radio"
+                type="radio"
+                value=""
+                name="colored-radio"
+                class="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                for="red-radio"
+                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Image</label
+              >
+            </div>
+            <div class="flex items-center mr-4">
+              <input
+                id="green-radio"
+                type="radio"
+                value=""
+                name="colored-radio"
+                class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                for="green-radio"
+                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Video</label
+              >
+            </div>
+          </div>
+          <h2 class="text-white">NEXT</h2>
         </div>
       </div>
     </div>
