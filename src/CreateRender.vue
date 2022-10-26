@@ -151,7 +151,7 @@
             />
           </div>
         </div>
-        <div class="w-full h-10 flex flex-row justify-between">
+        <div class="w-full h-10 flex flex-row justify-between items-center">
           <div class="flex flex-wrap">
             <div class="flex items-center mr-4">
               <input
@@ -182,7 +182,11 @@
               >
             </div>
           </div>
-          <h2 class="text-white">NEXT</h2>
+          <div
+            class="h-full bg-[#7900FF] px-12 flex flex-row items-center rounded-lg"
+          >
+            <h2 class="align-middle font-bold text-sm text-white">NEXT</h2>
+          </div>
         </div>
       </div>
     </div>
