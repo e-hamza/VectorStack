@@ -1,4 +1,4 @@
 import { createApp } from "vue";
-import NodesSelection from "./NodesSelection.vue";
+import RenderProgress from "./RenderProgress.vue";
 
-createApp(NodesSelection).mount("#app");
+createApp(RenderProgress).mount("#app");
